@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.fa-home{
+    padding: 10px;
+}
+.fa-address-book{
+    padding: 10px;
+}
+.fa-tasks{
+    padding: 10px;
+}
+.fa-address-card{
+    padding: 10px;
+}
+.fa-user-circle{
+    font-size: 100px;
+}
+.fa-facebook-square{
+    color:white;
+}
+.fa-twitter-square{
+    color: white;
+}
+.fa-youtube-square{
+    color: white;
+}
+.fa-instagram-square{
+    color: white;
+}
+.fa-times-circle{
+    color: white;
+}
+header a{
+    text-decoration: none;
+    color: black;
+
+}
+header a:hover{
+    color: white;
+}
+main section a{
+    text-decoration: none;
+    color: white;
+}
+main aside a{
+    text-decoration: none;
+}
+footer a{
+    text-decoration: none;
+}
+
+
+.header{ grid-area: header;}
+.nav{ grid-area: nav;}
+.aside{ grid-area: aside}
+.section{ grid-area: section;}
+
+
+.header-container{
+    display: grid;
+    grid-template-areas: "header    nav     nav";
+}
+.main-container{
+    display: grid;
+    grid-template-areas: "section    section     aside";
+}
+#grid-main-container{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+#grid-main-container h1{
+    grid-column: 1 / span 3;
+}
+
+header{
+    padding-left: 5%;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 8px 10px 0 rgb(0, 0, 0, 0.5), 0 8px 4px 0 rgb(0, 0, 0, 0.1);
+    background-color: white;
+}
+nav{
+    padding-top: 30px;
+}
+nav ul li{
+    display: inline;
+    text-align: center;
+    padding: 10px 40px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.5s, color 0.5s;
+    border-radius: 5px;
+}
+nav ul li:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+main{
+    background-image: url(/img/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 140vh;
+    padding: 5vh;
+}
+main section{
+    height: 60vh;
+    width: 140vh;
+    padding: 10vh;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 6px black;
+    background-color: rgba(0, 0, 0, 0.747);
+    box-shadow: 0 8px 10px 0 black;
+    border-radius: 10px;
+    margin-right: 5vh;
+    margin-top: 25vh;
+}
+main section a div{
+    background-color: rgb(20, 20, 20);
+    text-align: center;
+    padding: 5px;
+    max-width: 40vh;
+    min-width: 40vh;
+    height: 200px;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+    box-shadow: 0 4px 8px 0 black;
+
+}
+main section div h1{
+    font-size: 16px;
+}
+main section div img{
+    box-shadow: 0 4px 8px 0 black;
+    height: 25vh;
+    width: 38vh;
+    border-radius: 5px;
+}
+main section div p{
+    padding-top: 25%;
+    font-size: 20px;
+}
+main section div:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+
+main aside{
+    height: 85vh;
+    border-radius: 10px;
+    margin-top: 15vh;
+    background-color: white;
+    padding: 5vh 5vh;
+    box-shadow: 0 8px 10px 0 black;
+    text-align: center;
+    transition: box-shadow 0.5s;
+
+}
+main aside h1{
+    padding-top: 5%;
+}
+main aside h2{
+    text-align: left;
+    font-size: 18px;
+    color: rgb(20, 20, 20);
+}
+main aside:hover{
+    box-shadow: 0 0 1000px 0 black
+}
+main aside p{
+    padding-top: 20px;
+    text-align: left;
+    line-height: 20px;
+    padding-bottom: 80px;
+    
+}
+main aside div ul{
+    padding-top: 30px;
+    padding-right: 30px;
+    
+}
+main aside div ul li{
+    display: inline;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    border: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    transition: background-color 0.5s, color 0.5s;
+}
+main aside div ul li:hover{
+    cursor: pointer;
+    background-color: white;
+    border: solid;
+    border-width: 1px;
+    color: black;
+}
+
+footer{
+    height: 50vh;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 40px;
+    color: white;
+    box-shadow: 0 0 50px 100px black;
+
+}
+
+footer h1{
+    text-decoration: underline;
+    padding: 30px;
+}
+footer h2{
+    height: 50px;
+    width: 35vh;
+    color: black;
+    background-color: white;
+    margin: 0 80vh;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid;
+    border-width: 2px;
+    transition: background-color 0.5s, color 0.5s, box-shadow 0.5s, border 0.3s;
+}
+footer h2:hover{
+    color: white;
+    background-color: black;
+    border:solid;
+    border-width: 2px;
+    border-color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px 0px white;
+}
+footer ul{
+    padding: 20px;
+}
+footer ul li{
+    padding: 10px;
+    display: inline;
+    text-align: center;
+    font-size: 30px;
+    width: 30px;
+    transition: font-size 0.25s;
+}
+footer ul li:hover{
+    font-size: 38px;
+    cursor: pointer;
+}
+footer section{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    box-shadow: 0 0 50px 80px black;
+    padding: 10vh 0;
+    text-align: left;
+    padding-left: 50vh;
+}
+footer section div{
+    padding: 10px;
+    width: 60%;
+    padding-left: 30px;
+    background-color: rgb(2, 2, 2);
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.185);
+}
+footer section div p{
+    padding: 5px;
+}
+footer section div button{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: white ;
+    border-radius: 5px;
+    width: 100px;
+    font-weight: bold;
+    transition: background-color 0.5s, color 0.5s;
+}
+footer section div button:hover{
+    background-color: black;
+    color: white;
+}
+footer section input{
+    width: 80%;
+    color: rgb(0, 0, 0);
+}
+footer section textarea{
+    color: rgb(0, 0, 0);
+}
